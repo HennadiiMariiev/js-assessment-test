@@ -132,6 +132,7 @@
       inputEl.placeholder = INPUT_PLACEHOLDER;
       inputEl.title = INPUT_PLACEHOLDER;
       inputEl.value = target.alt;
+      inputEl.ariaLabel = 'Alt image text';
       inputEl.dataset.highlightedInput = true;
       inputEl.dataset.initialAltText = target.alt;
       target.dataset.hasOpenedInput = true;
