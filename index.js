@@ -176,9 +176,12 @@
 
   function addInputFocusStyles(styles) {
     const styleTag = document.createElement('style');
+    const headElem = document.querySelector('head');
 
     styleTag.appendChild(document.createTextNode(styles));
 
-    document.getElementsByTagName('head')[0].appendChild(styleTag);
+    if (headElem) {
+      headElem.appendChild(styleTag);
+    }
   }
 })();
